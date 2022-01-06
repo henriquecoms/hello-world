@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+	<head>
+	<title>Cadastre-se</title>
+
+	<p><h4 class="direita"><img src="email.png"  class="icone2">
+		<a href="https://www.google.com/gmail/"  id="a1">
+	allinhome2020@moveis.com.br</a><hr width = "2" size = "20" color="black" style=" margin-left: 700px; margin-top: -20px; float: 50px;"><a href="https://web.whatsapp.com/" id="a2"> <img src="fone.png" class="icone4"> Whatsapp:(38) 99148-3728 </a> </h4> </p>
+	<hr color="black" style=" float: 50px;margin-top: -17px; ">
+	<style>
+		#a1{
+			color: black;
+			text-decoration: none;
+			margin-right: 165px;
+			
+
+		}
+		#a2{
+			color: black;
+			text-decoration: none;
+			float: right;
+			margin-top: -27px;
+			margin-right: -70px;
+		
+		
+		}
+
+		h1{
+			font-family:  Helvetica, sans-serif;
+			font-weight: bold;
+
+		}
+		h3{
+			font-family: Helvetica, sans-serif;
+			font-weight: bold;
+		}
+		.direita{
+			text-align: right;
+			margin-top: -10px;
+			margin-right: 100px;}
+		
+		.icone2{
+			width: 17px;
+			
+
+		}
+		.icone4{
+			width: 17px;
+		
+		}
+		.icone3{
+			width: 300px;
+			margin-left: 330px;
+
+			}
+	
+		
+		body{
+			
+			margin: auto;
+			width: 960px;
+			
+			font-family: Helvetica, sans-serif;
+			background: 	#F5F5F5;
+			
+
+
+			}
+
+		
+		li{
+			display: inline-block;
+			font-weight: bold;
+			font-size: 14pt;
+			margin:  5px;
+		}
+		.destaques{
+				width: 400px;
+				height:350px;
+				border-radius:10px;}
+		
+		
+
+		#sobre1{
+			width: 300px;
+			text-align: justify;
+			margin-left: 20px;
+			font-size: 15px;
+			margin-top: -30px;
+		}
+
+		#sobre2{
+			width: 300px;
+			margin-left: 400px;
+			margin-top: -170px;
+			text-align: justify;
+			font-size: 15px;
+		}
+
+		#sobre3{
+			width: 300px;
+			margin-left: 700px;
+			margin-top: -170px;
+			text-align: justify;
+			font-size: 15px;
+		}
+		#diminuir{
+			max-width: 50px;
+			padding: 10px;
+			margin-top: -20px;
+			
+		}
+		.letrap{
+			font-size: 12px;
+			text-align: center;
+		}
+		form{
+			padding: 10px;
+			
+		}
+
+		input{
+	font-family: Helvetica, sans-serif;			
+	font-weight: normal;
+	font-size: 15px;
+
+		}
+		input:hover{
+			background-color: #dddddd;
+		}
+
+		legend{
+			
+			font-weight: bold;
+			font-family: Helvetica, sans-serif;
+		}
+		fieldset{
+			border-color: black;
+			margin: 20px;
+		}
+
+		.bot{
+			font-weight: bold;
+			width: 150px;
+			height: 50px;
+			background-color: gray;
+			border-radius: 5px;
+			outline: 0;
+
+			}
+			.bot:hover{
+				background-image: linear-gradient(to right, #dddddd,gray);
+				border-radius: 5px;
+			}
+
+	
+
+	</style>
+		
+
+
+
+<script>
+		function mudaImg (imagem){
+			document.getElementById("Painel").src= imagem;
+		}
+		function mudaImg2 (imagem2){
+			document.getElementById("Estante").src= imagem2;
+		}
+
+
+	</script>
+
+
+
+</head>
+<body>
+<header>
+	
+	
+	<a href="index.html"><img src="banner site.png" class="icone3" > </a>
+	<p><h2><center>Vendemos barato, porque Fabricamos</center> </h2></p>
+	
+
+
+
+	<hr color="black" >
+	<center><p><h2>Digite corretamente seus dados</h2></p></center>
+	<form>
+		<fieldset id="usuario">
+		<legend>Dados Pessoais</legend>
+
+		<p> Nome: <input type="text" name="nome" id="nome2" size="20" maxlength="50" placeholder="Digite seu nome" required="nome"></p>
+		<p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome2"  size="20" maxlength="50" placeholder="Digite seu sobrenome" required></p>
+		<p>Data de nascimento: <input type="date" name="data" id="dataN" size="20" maxlength="8" ></p>
+		<p>CPF: <input type="number" name="cpf" id="cpfN" size="20"  maxlength="11" placeholder="Digite seu CPF" ></p>
+		
+		<legend>Sexo</legend>
+		<p><input type="radio" name="sexo" id="masc"><label for="masc">Masculino</label>
+		<input type="radio" name="sexo" id="fem"><label for="fem">Feminino</label></p>
+		</fieldset>
+
+		<fieldset id="contato">
+				<legend>Contatos</legend>
+
+		<p> Email: <input type="email" name="email" id="email2" size="20" maxlength="50" placeholder="Digite seu Email"></p>
+		<p>Telefone: <input type="number" name="telefone" id="telefone" size="20" maxlength="11" placeholder="Digite seu Telefone"></p>	
+
+
+		</fieldset>
+
+		<fieldset id="enderecocompleto">
+			<legend>Endereço</legend>
+
+			<p> Rua: <input type="text" name="rua" id="rua2" size="20" maxlength="50" placeholder="Digite o nome da rua "></p>
+			<p> Número: <input type="number" name="numero" id="numero2" min="0" max="99999" size="2"></p>
+			<p> Bairro: <input type="text" name="bairro" id="bairro2" size="20" maxlength="20" placeholder="Digite o nome do bairro"></p>
+			<p> Cidade: <input type="text" name=" cidade" id="cidade2" size="20" maxlength="20" placeholder="Digite o nome da cidade"></p>
+			<p> CEP: <input type="number" name="cep" id="cep2" size="20" maxlength="8" placeholder="Digite seu CEP"> </p>
+			<p> Estado: <label for="est"><select name="estado" id="est">
+
+<option>Acre (AC)</option>
+<option>Alagoas (AL)</option>
+<option>Amapá (AP)</option>
+<option>Amazonas (AM)</option>
+<option>Bahia (BA)</option>
+<option>Ceará (CE)</option>
+<option>Distrito Federal (DF)</option></option>
+<option>Espírito Santo (ES)</option>
+<option>Goiás (GO)</option>
+<option>Maranhão (MA)</option>
+<option>Mato Grosso (MT)</option>
+<option>Mato Grosso do Sul (MS)</option>
+
+<option selected="Minas Gerais (MG)">Minas Gerais (MG)</option>
+<option>Pará (PA)</option>
+<option>Paraíba (PB)</option>
+<option>Paraná (PR)</option>
+<option>Pernambuco (PE)</option>
+<option>Piauí (PI)</option>
+<option>Rio de Janeiro (RJ)</option>
+<option>Rio Grande do Norte (RN)</option>
+<option>Rio Grande do Sul (RS)</option>
+<option>Rondônia (RO)</option>
+<option>Roraima (RR)</option>
+<option>Santa Catarina (SC)</option>
+<option>São Paulo (SP)</option>
+<option>Sergipe (SE)</option>
+<option>Tocantins (TO)</option>
+
+			</select></label> </p>
+
+
+			<fieldset id="senha">
+				<legend>Crie sua senha: </legend>
+				<p>Digite sua senha: <input type="password" name="senha1" id="senha2" size="20" maxlength="16" placeholder="Digite sua senha"></p>
+				<p>Digite sua senha novamente: <input type="password" name="novamente" id="novamente2" size="20" maxlength="16" placeholder="Digite novamente"></p>
+				<p><input type="checkbox"> Quero receber ofertas do site por email</p>
+
+
+
+
+			</fieldset>
+			
+
+			
+
+
+
+		
+
+		
+
+
+
+	</form>
+	<br>
+	
+			<br>
+
+</header>
+<center>
+<a href="index.html"><button class="bot" type="submit">Cadastrar</button></a>
+</center>
+
+<br>
+<br>
+<footer>
+<hr color="black">
+<br>
+
+
+<section>
+	<article id="sobre1">
+	<p><h3>Televendas</h3></p>
+<p>Horário de funcionamento</p>
+<p>Segunda a sexta: 08:00h às 23:00h</p>
+<p>Sábados 08:00h às 21:00h</p>
+<p>Domingo 09:00h às 20:00h</p>
+</article>
+
+<article id="sobre2">
+
+	<a href="Sobre All in Home.html" style="color: black; text-decoration: none;"><p><h3>All in Home</h3></p></a>
+<p>Quem somos</p>
+<p>Serviços</p>
+<p>Trabalhe conosco</p>
+<p>Sobre a loja</p>
+</article>
+
+<article id="sobre3">
+<p><h3>Atendimento Loja Física</h3></p>
+<p>Prazos e locais de entrega</p>
+<p>Política de Troca e Devolução</p>
+<p>Política de Privacidade</p>
+<p>Termos e Condições de Uso</p>
+
+
+</article>
+
+</section>
+<br>
+<br>
+<br>
+
+<section>
+	<center>
+	<p><h4>Aceitamos cartões</h4></p>
+	<img src="bandeiras cartoes.png" style="width: 720px; height: 100px;">
+	</center>
+
+
+</section>
+
+<section>
+	<center>
+	<p><h4> Site 100% seguro </h4></p>
+	<img src="seguro.png" style="width: 380px; height: 100px;">
+	</center>
+
+</section>
+<br>
+<br>
+<section >
+	<article>
+	<center>
+	<p><h4>Siga All in Home nas redes sociais</h4></p>
+	<a href="https://facebook.com/"><img src="face.png" id="diminuir"></a>
+	<a href="https://www.instagram.com/"><img src="insta.png" id="diminuir"></a>
+	<a href="https://twitter.com/login?lang=pt"><img src="twitter.png" id="diminuir"></a>
+	
+	</center>
+	</article>
+	<br>
+	<article style="font-size: 15px;">
+		<center>
+		<p> All in Home Indústria de moveis LTDA - CNPJ: 02.123.456/0001-78 - CEP: 39270-000 </p>
+		<p> Loja Física: Rua Antônio Nascimento, nº 123 - Pirapora/MG | Fábrica: Rua Benjamin Guimarães, nº 567, Bairro das Indústrias - Pirapora/MG </p>
+</center>
+	</article>
+	<hr color="black">
+	<p class="letrap">All in home LTDA ® Todos os direitos reservados</p>
+
+</section>
+</footer>
+
+</body>
+
+</html>
