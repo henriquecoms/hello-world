@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cadastre-se</title>
+</head>
+<body>
+	<style type="text/css">
+		
+	body{
+		background-image: linear-gradient(to right, #1c1c1c, #a9a9a9);
+		font-family: andale mono, monospace;
+		color: white;
+}
+
+	.box{
+		position: absolute;
+		margin-left: 345px;
+		margin-top: 100px;
+		background-color: rgba(0, 0, 0, 0.8);
+		border-radius: 20px;
+		padding: 18px;
+
+
+
+}
+
+
+fieldset{
+
+	border-radius: 20px;
+	border: 5px solid #DCDCDC;
+	font-size: 25px;
+
+}
+
+legend{
+	text-align: center;
+	color: whitesmoke;
+
+
+}
+
+h1{
+
+	border-radius: 20px;
+	border: 5px solid #808080;
+	position: absolute;
+	padding: 10px;
+	margin-left: 550px;
+	background-color: #808080;
+}
+
+.caixadetexto{
+	background: none;
+	border: none;
+	border-bottom: 2px solid white;
+	outline: none;
+	color: white;
+	font-size: 20px;
+	width: 100%;
+	letter-spacing: 5px;
+
+}
+
+	label{
+ 	font-size: 25px;
+
+
+	}
+
+	.estado{
+		background: rgba(20.5,20.5,20.5);
+		border: none;
+		border-bottom: 2px solid white;
+		outline: none;
+		color: white;
+		font-size: 20px;
+		width: 100%;
+		letter-spacing: 5px;
+
+	}
+
+	.botao{
+		border-radius: 20px;
+		padding: 20px 80px;
+		background-image: linear-gradient(to right, #1c1c1c, #a9a9a9);
+		font-size: 18px;
+		font-weight: bold;
+		cursor: pointer;
+		box-shadow: 0 5px #808080;
+
+}
+
+.botao:hover{
+	border-radius: 20px;
+		padding: 20px 80px;
+		background-image: linear-gradient(to left, #1c1c1c, #a9a9a9);
+		font-size: 18px;
+		font-weight: bold;
+		cursor: pointer;
+		box-shadow: 0 5px #808080;
+
+
+
+
+}
+
+	.botao:active{
+		box-shadow: none;
+		position: relative;
+		top: 5px;
+
+
+	}
+
+
+
+
+	</style>
+
+
+
+<div>
+	<h1>Cadastro</h1>
+
+</div>
+<div class="box">
+
+<form>
+	
+<fieldset><legend><b>Dados pessoais</b></legend>
+<label><input type="name" name="nome" placeholder="Digite seu nome" maxlength="30" required="required" class="caixadetexto">Nome</label><br><br>
+
+<label><input type="name" name="sobrenome" placeholder="Digite seu sobrenome" maxlength="50" required="required" class="caixadetexto">Sobrenome</label><br><br>
+
+<label><input type="number" name="cpf" placeholder="Digite seu CPF" maxlength="11" required="required" class="caixadetexto">CPF</label><br><br>
+
+<label><input type="number" name="RG" placeholder="Digite seu RG" maxlength="11" required="required" class="caixadetexto">RG</label><br><br>
+
+<label><input type="date" name="data" required="required" class="caixadetexto">Data de nascimento</label><br><br>
+
+<fieldset>
+	<legend><b>Sexo</b></legend>
+
+<label><input type="radio" name="sexo">Masculino</label><br><br>
+<label><input type="radio" name="sexo">Feminino</label><br><br>
+<label><input type="radio" name="sexo">Outro</label><br><br>
+
+
+</fieldset>
+
+<label><input type="number" name="telefone" placeholder="Digite seu telefone" required="required" class="caixadetexto">Telefone
+</label><br><br>
+
+<label><input type="email" name="email" placeholder="Digite seu Email" required="required" class="caixadetexto">Email
+</label>
+
+</fieldset><br>
+
+<fieldset><legend><b>Endereço</b></legend>
+
+<label><input type="name" name="rua" placeholder="Digite o nome da rua" maxlength="30" required="required" class="caixadetexto">Nome da rua</label><br><br>
+
+<label><input type="number" name="residencia" placeholder="Digite o número da residência" size="1" required="required" class="caixadetexto">Número da residência</label><br><br>
+
+<label><input type="name" name="bairro" placeholder="Digite o nome do bairro" maxlength="30" required="required" class="caixadetexto">Bairro</label><br><br>
+
+<label><input type="name" name="cidade" placeholder="Digite o nome da cidade" maxlength="30" required="required" class="caixadetexto">Cidade</label><br><br>
+
+<label><input type="name" name="cep" placeholder="Digite o CEP" maxlength="30" required="required" class="caixadetexto">CEP</label><br><br>
+
+<label>
+<b>Estado</b><br>
+
+<select id="estado" name="estado" class="estado">
+	
+
+	<option value="AC">Acre</option>
+    <option value="AL">Alagoas</option>
+    <option value="AP">Amapá</option>
+    <option value="AM">Amazonas</option>
+    <option value="BA">Bahia</option>
+    <option value="CE">Ceará</option>
+    <option value="DF">Distrito Federal</option>
+    <option value="ES">Espírito Santo</option>
+    <option value="GO">Goiás</option>
+    <option value="MA">Maranhão</option>
+    <option value="MT">Mato Grosso</option>
+    <option value="MS">Mato Grosso do Sul</option>
+    <option value="MG">Minas Gerais</option>
+    <option value="PA">Pará</option>
+    <option value="PB">Paraíba</option>
+    <option value="PR">Paraná</option>
+    <option value="PE">Pernambuco</option>
+    <option value="PI">Piauí</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="RN">Rio Grande do Norte</option>
+    <option value="RS">Rio Grande do Sul</option>
+    <option value="RO">Rondônia</option>
+    <option value="RR">Roraima</option>
+    <option value="SC">Santa Catarina</option>
+    <option value="SP">São Paulo</option>
+    <option value="SE">Sergipe</option>
+    <option value="TO">Tocantins</option>
+    <option value="EX">Estrangeiro</option>
+
+
+</select></label>
+
+
+</fieldset><br>
+
+<fieldset><legend><b>Crie sua senha</b></legend>
+
+<label><input type="password" name="senha" placeholder="Digite uma senha" required="required" class="caixadetexto">Senha</label><br><br>
+
+<label><input type="password" name="senha" placeholder="Digite novamente a senha" required="required" class="caixadetexto">Digite novamente</label>
+
+
+</fieldset>
+
+<center>Desejo receber email de novidades<input type="checkbox"></center>
+<br><br>
+
+<center><input type="submit" name="Enviar" class="botao"></center>
+
+
+</fieldset>
+
+
+
+</form>
+
+
+
+
+	</div>
+
+
+
+</body>
+</html>
